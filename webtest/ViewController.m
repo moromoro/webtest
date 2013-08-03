@@ -36,6 +36,7 @@
     
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
     NSString *cacheDir = [paths objectAtIndex:0];
+    
     NSString *bundleID = [[NSBundle mainBundle]bundleIdentifier];
     NSString *appCacheDir = [cacheDir stringByAppendingPathComponent:bundleID];
     
